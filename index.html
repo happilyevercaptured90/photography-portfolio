@@ -5,13 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ | Kerry Percy | Wedding Content Creator Glasgow</title>
-  <meta name="description" content="Cinematic wedding films and content creation in Glasgow, Scotland. Kerry Percy captures authentic love stories with a modern, editorial eye. Book your wedding coverage today.">
-  <meta name="keywords" content="wedding photographer Glasgow, wedding videographer Scotland, wedding content creator, cinematic wedding films, Glasgow wedding photography">
+  <meta name="description" content="Wedding content creator in Glasgow, Scotland. Kerry Percy captures candid behind-the-scenes moments of your dream day, delivered within 24 hours. Book your wedding coverage today.">
+  <meta name="keywords" content="wedding content creator Glasgow, wedding videographer Scotland, behind the scenes wedding, Glasgow wedding photography, wedding reels">
   <meta property="og:title" content="ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ | Wedding Content Creator Glasgow">
-  <meta property="og:description" content="Cinematic wedding films and content creation. Capturing authentic love stories with a modern, editorial eye.">
+  <meta property="og:description" content="Behind the scenes coverage of your dream day. Candid moments captured and delivered within 24 hours.">
   <meta property="og:image" content="images/hero.jpg">
   <meta property="og:url" content="https://happilyever-captured.com">
-  <meta property="og:type" content="website">
   <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,45 +23,23 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            'serif': ['Cormorant Garamond', 'serif'],
-            'sans': ['Montserrat', 'sans-serif'],
-          },
-          colors: {
-            'cream': '#FAF8F5',
-            'charcoal': '#2C2C2C',
-            'sage': '#9CAF88',
-            'taupe': '#A69F98',
-            'blush': '#E8D5D0',
-          },
+          fontFamily: { 'serif': ['Cormorant Garamond', 'serif'], 'sans': ['Montserrat', 'sans-serif'] },
+          colors: { 'cream': '#FAF8F5', 'charcoal': '#2C2C2C', 'sage': '#9CAF88', 'taupe': '#A69F98', 'blush': '#E8D5D0', 'gold': '#8B7355' },
         },
       },
     }
   </script>
   <style>
     [x-cloak] { display: none !important; }
-    .stagger-1 { animation-delay: 0.1s; }
-    .stagger-2 { animation-delay: 0.2s; }
-    .stagger-3 { animation-delay: 0.3s; }
-    .stagger-4 { animation-delay: 0.4s; }
-    .stagger-5 { animation-delay: 0.5s; }
+    .stagger-1 { animation-delay: 0.1s; } .stagger-2 { animation-delay: 0.2s; } .stagger-3 { animation-delay: 0.3s; } .stagger-4 { animation-delay: 0.4s; } .stagger-5 { animation-delay: 0.5s; }
     .gallery-item { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
     .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
     .hero-gradient { background: linear-gradient(135deg, rgba(250,248,245,0.95) 0%, rgba(250,248,245,0.7) 50%, rgba(250,248,245,0.4) 100%); }
     .img-hover { transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
     .img-hover:hover { transform: scale(1.05); }
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #FAF8F5; }
-    ::-webkit-scrollbar-thumb { background: #A69F98; border-radius: 4px; }
   </style>
 </head>
 <body class="bg-cream text-charcoal font-sans antialiased">
@@ -77,7 +54,7 @@
         </a>
         <ul class="hidden md:flex items-center space-x-10">
           <li><a href="#portfolio" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">Portfolio<span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span></a></li>
-          <li><a href="#services" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">Services<span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span></a></li>
+          <li><a href="#packages" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">Packages<span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span></a></li>
           <li><a href="dist/about_me.html" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">About<span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span></a></li>
           <li><a href="dist/contact.html" class="text-sm tracking-widest uppercase bg-charcoal text-cream px-6 py-3 hover:bg-sage transition-colors">Get in Touch</a></li>
         </ul>
@@ -92,31 +69,15 @@
       <div x-show="open" x-cloak class="md:hidden absolute top-full left-0 w-full bg-cream/98 backdrop-blur-md shadow-lg">
         <ul class="flex flex-col items-center py-8 space-y-6">
           <li><a href="#portfolio" @click="open = false" class="text-sm tracking-widest uppercase">Portfolio</a></li>
-          <li><a href="#services" @click="open = false" class="text-sm tracking-widest uppercase">Services</a></li>
+          <li><a href="#packages" @click="open = false" class="text-sm tracking-widest uppercase">Packages</a></li>
           <li><a href="dist/about_me.html" class="text-sm tracking-widest uppercase">About</a></li>
           <li><a href="dist/contact.html" class="text-sm tracking-widest uppercase bg-charcoal text-cream px-6 py-3">Get in Touch</a></li>
         </ul>
       </div>
     </nav>
-  
-<!-- As Seen In -->
-<section class="bg-white border-t border-black/10">
-  <div class="max-w-7xl mx-auto px-6 py-2 text-center">
-    <p class="text-[10px] uppercase tracking-widest text-gray-600 leading-none">As Seen In</p>
-    <p class="text-xs leading-snug">
-      <a href="https://tietheknot.scot/planning-details/photography-film/wedding-content-creators/"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="underline underline-offset-4 hover:opacity-70 transition">
-        Tie the Knot Scotland
-      </a>
-      &nbsp;•&nbsp;
-      <span class="italic">To Have &amp; To Hold Magazine</span>
-    </p>
-  </div>
-</section>
-    </header>
-<!-- Hero Section -->
+  </header>
+
+  <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center">
     <div class="absolute inset-0 z-0">
       <img src="images/hero.jpg" alt="Wedding couple" class="w-full h-full object-cover">
@@ -126,13 +87,13 @@
       <div class="max-w-3xl">
         <p class="text-sm tracking-[0.3em] uppercase text-sage mb-6 animate-fade-in-up stagger-1">Kerry Percy · Wedding Content Creator · Glasgow</p>
         <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.1] mb-8 animate-fade-in-up stagger-2">
-          Capturing your<br><span class="italic text-sage">love story</span>
+          Behind the scenes<br><span class="italic text-sage">of your dream day</span>
         </h1>
         <p class="text-lg md:text-xl font-light text-charcoal/80 max-w-xl mb-10 animate-fade-in-up stagger-3">
-          Cinematic wedding films and stunning content that tells the authentic story of your day. Because every moment deserves to be remembered beautifully.
+          Imagine having all the candid moments you might miss on your wedding day, captured and sent to you just 24 hours later.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-4">
-          <a href="#portfolio" class="inline-block text-center text-sm tracking-widest uppercase bg-charcoal text-cream px-8 py-4 hover:bg-sage transition-colors">View Portfolio</a>
+          <a href="#packages" class="inline-block text-center text-sm tracking-widest uppercase bg-charcoal text-cream px-8 py-4 hover:bg-sage transition-colors">View Packages</a>
           <a href="dist/contact.html" class="inline-block text-center text-sm tracking-widest uppercase border border-charcoal px-8 py-4 hover:bg-charcoal hover:text-cream transition-all">Book Your Date</a>
         </div>
       </div>
@@ -154,22 +115,61 @@
             <img src="images/kerry_portrait.jpg" alt="Kerry Percy - Wedding Content Creator" class="w-full h-full object-cover img-hover">
           </div>
           <div class="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-sage text-cream p-6 md:p-8">
-            <p class="font-serif text-4xl md:text-5xl font-light">5+</p>
-            <p class="text-xs tracking-widest uppercase mt-1">Years Experience</p>
+            <p class="font-serif text-4xl md:text-5xl font-light">24hr</p>
+            <p class="text-xs tracking-widest uppercase mt-1">Delivery</p>
           </div>
         </div>
         <div>
           <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">Hello, I'm Kerry</p>
-          <h2 class="font-serif text-4xl md:text-5xl font-light mb-6">Your wedding deserves<br><span class="italic">more than photos</span></h2>
+          <h2 class="font-serif text-4xl md:text-5xl font-light mb-6">Your wedding day,<br><span class="italic">through my lens</span></h2>
           <div class="space-y-4 text-charcoal/80 font-light">
-            <p>I'm Kerry Percy, a wedding content creator based in beautiful Glasgow, Scotland. I believe your wedding day is more than just a date – it's the beginning of your greatest adventure together.</p>
-            <p>My approach combines cinematic storytelling with an editorial eye, creating content that captures not just how your day looked, but how it felt. From the nervous excitement of getting ready to the joyful chaos of the dance floor, I'm there to preserve every precious moment.</p>
-            <p>Whether you're planning an intimate elopement in the Scottish Highlands or a grand celebration in the city, I'd love to be part of your story.</p>
+            <p>As your wedding content creator, I'll capture all those candid, behind-the-scenes moments of your dream day – and have them in your hands just 24 hours later.</p>
+            <p>I complement and work alongside your photographer and videographer, never replacing them, but adding another dimension to your wedding memories. While they focus on the formal shots, I'm there to catch the spontaneous laughter, the happy tears, and all the little moments in between.</p>
+            <p>I have always been known for having great attention to detail, and I love capturing special memories as if they're my own. After studying photography and planning my own wedding, I ventured into wedding content creating and started ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ.</p>
           </div>
           <a href="dist/about_me.html" class="inline-flex items-center mt-8 text-sm tracking-widest uppercase group">
             <span class="border-b border-charcoal group-hover:border-sage transition-colors">Learn More About Me</span>
             <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Get Section -->
+  <section class="py-16 md:py-24 bg-blush">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-3xl md:text-4xl font-light">What's <span class="italic">included</span></h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="font-medium mb-2">Raw Photos & Videos</h3>
+          <p class="text-sm text-charcoal/70">A full gallery capturing all the best moments of your day</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="font-medium mb-2">Edited Reels</h3>
+          <p class="text-sm text-charcoal/70">Edited videos/reels discussed and arranged to your wishes</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="font-medium mb-2">24-48hr Delivery</h3>
+          <p class="text-sm text-charcoal/70">All footage sent to you within 24-48 hours</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+          </div>
+          <h3 class="font-medium mb-2">Bespoke Options</h3>
+          <p class="text-sm text-charcoal/70">Packages tailored to your specific needs</p>
         </div>
       </div>
     </div>
@@ -185,121 +185,66 @@
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
         <div class="col-span-2 row-span-2 gallery-item stagger-1">
           <div class="relative aspect-[4/3] md:aspect-[4/5] overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_1.jpg" data-caption="Sarah & James - Loch Lomond">
-              <img src="images/wedding_1.jpg" alt="Wedding at Loch Lomond" class="w-full h-full object-cover img-hover">
-              <div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all duration-500"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                <p class="font-serif text-xl text-white">Sarah & James</p>
-                <p class="text-sm text-white/80">Loch Lomond</p>
-              </div>
-            </a>
+            <a data-fancybox="gallery" href="images/wedding_1.jpg"><img src="images/wedding_1.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all duration-500"></div></a>
           </div>
         </div>
-        <div class="gallery-item stagger-2">
-          <div class="relative aspect-square overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_2.jpg"><img src="images/wedding_2.jpg" alt="Wedding" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a>
-          </div>
-        </div>
-        <div class="gallery-item stagger-3">
-          <div class="relative aspect-square overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_3.jpg"><img src="images/wedding_3.jpg" alt="Wedding" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a>
-          </div>
-        </div>
-        <div class="gallery-item stagger-4">
-          <div class="relative aspect-square overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_4.jpg"><img src="images/wedding_4.jpg" alt="Wedding" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a>
-          </div>
-        </div>
-        <div class="col-span-2 gallery-item stagger-5">
-          <div class="relative aspect-[2/1] overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_5.jpg" data-caption="Lucy & Ben - St Andrews">
-              <img src="images/wedding_5.jpg" alt="Wedding at St Andrews" class="w-full h-full object-cover img-hover">
-              <div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                <p class="font-serif text-xl text-white">Lucy & Ben</p>
-                <p class="text-sm text-white/80">St Andrews</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="gallery-item stagger-5">
-          <div class="relative aspect-[3/4] overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_6.jpg"><img src="images/wedding_6.jpg" alt="Wedding" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a>
-          </div>
-        </div>
-        <div class="col-span-2 gallery-item stagger-5">
-          <div class="relative aspect-[16/9] overflow-hidden group">
-            <a data-fancybox="gallery" href="images/wedding_7.jpg" data-caption="Amy & Michael - Gleneagles">
-              <img src="images/wedding_7.jpg" alt="Wedding at Gleneagles" class="w-full h-full object-cover img-hover">
-              <div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div>
-            </a>
-          </div>
-        </div>
+        <div class="gallery-item stagger-2"><div class="relative aspect-square overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_2.jpg"><img src="images/wedding_2.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
+        <div class="gallery-item stagger-3"><div class="relative aspect-square overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_3.jpg"><img src="images/wedding_3.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
+        <div class="gallery-item stagger-4"><div class="relative aspect-square overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_4.jpg"><img src="images/wedding_4.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
+        <div class="col-span-2 gallery-item stagger-5"><div class="relative aspect-[2/1] overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_5.jpg"><img src="images/wedding_5.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
+        <div class="gallery-item stagger-5"><div class="relative aspect-[3/4] overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_6.jpg"><img src="images/wedding_6.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
+        <div class="col-span-2 gallery-item stagger-5"><div class="relative aspect-[16/9] overflow-hidden group"><a data-fancybox="gallery" href="images/wedding_7.jpg"><img src="images/wedding_7.jpg" alt="Wedding content" class="w-full h-full object-cover img-hover"><div class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all"></div></a></div></div>
       </div>
       <div class="text-center mt-16">
         <p class="text-charcoal/60 mb-4">See more of my work on Instagram</p>
         <a href="https://www.instagram.com/happilyever.captured" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-sm tracking-widest uppercase border border-charcoal px-8 py-4 hover:bg-charcoal hover:text-cream transition-all group">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           <span>@happilyever.captured</span>
-          <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-24 md:py-32 bg-charcoal text-cream">
+  <!-- Packages Section -->
+  <section id="packages" class="py-24 md:py-32 bg-charcoal text-cream">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
       <div class="text-center mb-16">
-        <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">What I Offer</p>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light">Tailored packages for<br><span class="italic text-sage">your perfect day</span></h2>
+        <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">Wedding Packages</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light">Behind the scenes coverage<br><span class="italic text-sage">of your dream day</span></h2>
+        <p class="mt-6 text-cream/70 max-w-2xl mx-auto">Bespoke packages available on request and can be tailored to your needs.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Essential -->
         <div class="border border-cream/20 p-8 md:p-10 hover:border-sage/50 transition-colors">
-          <div class="text-sage mb-6">
-            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-          </div>
-          <h3 class="font-serif text-2xl mb-4">Essential</h3>
-          <p class="text-cream/70 font-light mb-6">Perfect for intimate ceremonies and smaller celebrations.</p>
+          <h3 class="font-serif text-3xl mb-2">Package 1</h3>
+          <p class="text-sage text-sm tracking-widest uppercase mb-6">Ceremony Coverage</p>
+          <p class="text-cream/70 font-light mb-6">From morning bridal prep through to the end of the ceremony.</p>
           <ul class="space-y-3 text-sm text-cream/80 mb-8">
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>6 hours of coverage</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>300+ edited images</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Online gallery</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Social media highlights</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Full gallery of raw photos & videos</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Edited videos/reels to your wishes</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>All footage sent 24-48 hours later</li>
           </ul>
           <a href="dist/contact.html" class="inline-block text-sm tracking-widest uppercase border border-cream/30 px-6 py-3 hover:bg-cream hover:text-charcoal transition-all">Enquire</a>
         </div>
-        <!-- Signature (Featured) -->
         <div class="bg-sage text-charcoal p-8 md:p-10 relative">
           <div class="absolute top-0 right-0 bg-charcoal text-cream text-xs tracking-widest uppercase px-4 py-2">Most Popular</div>
-          <div class="text-charcoal/70 mb-6">
-            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-          </div>
-          <h3 class="font-serif text-2xl mb-4">Signature</h3>
-          <p class="text-charcoal/70 font-light mb-6">Complete coverage with cinematic film for the full experience.</p>
+          <h3 class="font-serif text-3xl mb-2">Package 2</h3>
+          <p class="text-charcoal/70 text-sm tracking-widest uppercase mb-6">Ceremony + First Dances</p>
+          <p class="text-charcoal/70 font-light mb-6">From the start of the ceremony until your first few dances.</p>
           <ul class="space-y-3 text-sm text-charcoal/80 mb-8">
-            <li class="flex items-center"><svg class="w-4 h-4 text-charcoal mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Full day coverage (10+ hrs)</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-charcoal mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>500+ edited images</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-charcoal mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>5-minute highlight film</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-charcoal mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Engagement session included</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-charcoal mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Social media content pack</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-charcoal mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Full gallery of raw photos & videos</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-charcoal mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Edited videos/reels to your wishes</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-charcoal mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>All footage sent 24-48 hours later</li>
           </ul>
           <a href="dist/contact.html" class="inline-block text-sm tracking-widest uppercase bg-charcoal text-cream px-6 py-3 hover:bg-charcoal/80 transition-all">Enquire</a>
         </div>
-        <!-- Luxury -->
         <div class="border border-cream/20 p-8 md:p-10 hover:border-sage/50 transition-colors">
-          <div class="text-sage mb-6">
-            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-          </div>
-          <h3 class="font-serif text-2xl mb-4">Luxury</h3>
-          <p class="text-cream/70 font-light mb-6">The ultimate wedding content experience with premium deliverables.</p>
+          <h3 class="font-serif text-3xl mb-2">Package 3</h3>
+          <p class="text-sage text-sm tracking-widest uppercase mb-6">Full Day Coverage</p>
+          <p class="text-cream/70 font-light mb-6">From bridal prep all the way to your first few dances.</p>
           <ul class="space-y-3 text-sm text-cream/80 mb-8">
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Multi-day coverage</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>800+ edited images</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>15-minute cinematic film</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Luxury album + prints</li>
-            <li class="flex items-center"><svg class="w-4 h-4 text-sage mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Second shooter</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Full gallery of raw photos & videos</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Edited videos/reels to your wishes</li>
+            <li class="flex items-start"><svg class="w-4 h-4 text-sage mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>All footage sent 24-48 hours later</li>
           </ul>
           <a href="dist/contact.html" class="inline-block text-sm tracking-widest uppercase border border-cream/30 px-6 py-3 hover:bg-cream hover:text-charcoal transition-all">Enquire</a>
         </div>
@@ -308,14 +253,14 @@
     </div>
   </section>
 
-  <!-- Testimonial Section -->
+  <!-- Personal Quote Section -->
   <section class="py-24 md:py-32 bg-blush">
     <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
       <svg class="w-12 h-12 mx-auto mb-8 text-sage" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-      <blockquote class="font-serif text-2xl md:text-3xl lg:text-4xl font-light italic leading-relaxed mb-8">"Kerry captured our day so beautifully. Every time we look at our photos and watch our film, we're transported right back to those magical moments. She has an incredible talent for making you feel completely at ease."</blockquote>
+      <blockquote class="font-serif text-2xl md:text-3xl lg:text-4xl font-light italic leading-relaxed mb-8">"I'm a September bride who got married in the Salerno Suite at Ingliston Country Club in 2024. Our wedding was one of the best days of our lives – and that's exactly why I understand how important it is to capture every moment."</blockquote>
       <div>
-        <p class="font-medium">Sarah & James</p>
-        <p class="text-sm text-charcoal/60">Married at Loch Lomond, 2024</p>
+        <p class="font-medium">Kerry Percy</p>
+        <p class="text-sm text-charcoal/60">Founder, ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ</p>
       </div>
     </div>
   </section>
@@ -325,9 +270,19 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">Let's Create Together</p>
-          <h2 class="font-serif text-4xl md:text-5xl font-light mb-6">Ready to capture<br><span class="italic">your love story?</span></h2>
-          <p class="text-charcoal/70 font-light mb-8">I'd love to hear all about your wedding plans. Whether you have every detail planned or you're just starting to dream, let's chat about how I can help preserve your memories.</p>
+          <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">Book Your Session</p>
+          <h2 class="font-serif text-4xl md:text-5xl font-light mb-6">Ready to capture<br><span class="italic">your dream day?</span></h2>
+          <p class="text-charcoal/70 font-light mb-8">ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ has your wedding day covered. Get in touch to discuss your perfect package and secure your date.</p>
+          <div class="space-y-4 mb-8">
+            <a href="tel:07500261235" class="flex items-center gap-3 text-charcoal hover:text-sage transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              <span class="font-medium">07500 261235</span>
+            </a>
+            <a href="mailto:happilyever.captured@outlook.com" class="flex items-center gap-3 text-charcoal hover:text-sage transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <span>happilyever.captured@outlook.com</span>
+            </a>
+          </div>
           <div class="flex flex-col sm:flex-row gap-4">
             <a href="dist/contact.html" class="inline-block text-center text-sm tracking-widest uppercase bg-charcoal text-cream px-8 py-4 hover:bg-sage transition-colors">Get in Touch</a>
             <a href="https://www.instagram.com/happilyever.captured" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 text-sm tracking-widest uppercase border border-charcoal px-8 py-4 hover:bg-charcoal hover:text-cream transition-all">
@@ -349,17 +304,14 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
       <div class="grid md:grid-cols-3 gap-12 mb-12">
         <div>
-          <a href="index.html" class="inline-block mb-4">
-            <span class="font-serif text-2xl font-light">ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ</span>
-            <span class="font-serif text-2xl italic text-sage ml-1">ᴄᴀᴘᴛᴜʀᴇᴅ</span>
-          </a>
-          <p class="text-cream/60 text-sm font-light">Kerry Percy · Wedding content creator based in Glasgow, Scotland. Capturing love stories across the UK and beyond.</p>
+          <a href="index.html" class="inline-block mb-4"><span class="font-serif text-2xl font-light">ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ</span><span class="font-serif text-2xl italic text-sage ml-1">ᴄᴀᴘᴛᴜʀᴇᴅ</span></a>
+          <p class="text-cream/60 text-sm font-light">Kerry Percy · Wedding content creator based in Glasgow, Scotland. Behind the scenes coverage delivered within 24 hours.</p>
         </div>
         <div>
           <h4 class="text-sm tracking-widest uppercase mb-4">Quick Links</h4>
           <ul class="space-y-2 text-cream/60 text-sm">
             <li><a href="#portfolio" class="hover:text-sage transition-colors">Portfolio</a></li>
-            <li><a href="#services" class="hover:text-sage transition-colors">Services</a></li>
+            <li><a href="#packages" class="hover:text-sage transition-colors">Packages</a></li>
             <li><a href="dist/about_me.html" class="hover:text-sage transition-colors">About</a></li>
             <li><a href="dist/contact.html" class="hover:text-sage transition-colors">Contact</a></li>
           </ul>
@@ -371,7 +323,8 @@
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
           </div>
-          <p class="text-cream/60 text-sm"><a href="mailto:hello@happilyever-captured.com" class="hover:text-sage transition-colors">hello@happilyever-captured.com</a></p>
+          <p class="text-cream/60 text-sm"><a href="tel:07500261235" class="hover:text-sage transition-colors">07500 261235</a></p>
+          <p class="text-cream/60 text-sm mt-1"><a href="mailto:happilyever.captured@outlook.com" class="hover:text-sage transition-colors">happilyever.captured@outlook.com</a></p>
           <p class="text-cream/60 text-sm mt-1">Glasgow, Scotland</p>
         </div>
       </div>
@@ -381,22 +334,11 @@
       </div>
     </div>
   </footer>
-
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
     Fancybox.bind('[data-fancybox="gallery"]', { Thumbs: false });
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.gallery-item').forEach(item => {
-      item.style.animationPlayState = 'paused';
-      observer.observe(item);
-    });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.animationPlayState = 'running'; observer.unobserve(entry.target); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.gallery-item').forEach(item => { item.style.animationPlayState = 'paused'; observer.observe(item); });
   </script>
 </body>
 </html>
