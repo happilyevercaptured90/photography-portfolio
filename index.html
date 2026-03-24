@@ -326,31 +326,48 @@
     </div>
   </section>
 
-  <!-- Reviews Section -->
-  <section class="py-24 md:py-32 bg-blush">
-    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-      <div class="text-center mb-16">
-        <p class="text-sm tracking-[0.3em] uppercase text-sage mb-4">Kind Words</p>
-        <h2 class="font-serif text-4xl md:text-5xl font-light">What <span class="italic">couples say</span></h2>
+  <!-- Reviews: scattered editorial layout -->
+
+  <!-- Review 1, para 1: full-width intro pull quote -->
+  <section class="py-16 md:py-20 bg-blush">
+    <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <p class="text-sm tracking-[0.3em] uppercase text-sage mb-8">Kind Words</p>
+      <svg class="w-8 h-8 mx-auto mb-6 text-sage/60" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+      <p class="font-serif text-2xl md:text-3xl lg:text-4xl font-light italic leading-relaxed text-charcoal/90">"We honestly could not recommend Kerry enough. From the moment she arrived, she put in an unreal effort to make sure every single moment of our wedding was captured. Nothing was missed – the big emotional moments, the little in-between glances, the laughter with friends – it's all there for us to relive forever."</p>
+    </div>
+  </section>
+
+  <!-- Review 1, para 2: overlaid on wedding_2.jpg image -->
+  <section class="relative min-h-[60vh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="images/wedding_2.jpg" alt="Wedding couple" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-charcoal/60"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 w-full">
+      <div class="max-w-xl ml-auto">
+        <p class="font-serif text-xl md:text-2xl font-light italic leading-relaxed text-cream mb-6">"What really stood out was how naturally she blended in. So many of our guests thought she was part of the wedding party! She fit in so effortlessly, got on amazingly well with all of our other vendors, and created such a calm, positive energy throughout the day."</p>
+        <p class="text-sm tracking-widest uppercase text-cream/70">— The Sichi's</p>
       </div>
-      <div class="grid md:grid-cols-2 gap-10">
-        <!-- Review 1 -->
-        <div class="bg-white/60 backdrop-blur-sm p-8 md:p-10">
-          <svg class="w-8 h-8 mb-6 text-sage" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-          <blockquote class="font-serif text-lg md:text-xl font-light italic leading-relaxed mb-6 text-charcoal/90">"We honestly could not recommend Kerry at happilyever.captured enough. From the moment she arrived, she put in an unreal effort to make sure every single moment of our wedding was captured in the content she produced. Nothing was missed – the big emotional moments, the little in-between glances, the laughter with friends – it's all there for us to relive forever.<br><br>What really stood out was how naturally she blended in. So many of our guests thought she was part of the wedding party! She fit in so effortlessly, got on amazingly well with all of our other vendors, and created such a calm, positive energy throughout the day."</blockquote>
-          <div class="border-t border-sage/30 pt-4">
-            <p class="font-medium tracking-wide">The Sichi's</p>
-          </div>
-        </div>
-        <!-- Review 2 -->
-        <div class="bg-white/60 backdrop-blur-sm p-8 md:p-10">
-          <svg class="w-8 h-8 mb-6 text-sage" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-          <blockquote class="font-serif text-lg md:text-xl font-light italic leading-relaxed mb-6 text-charcoal/90">"Kerry made me, my husband, and our entire wedding party feel completely relaxed and at ease. Her knowledge, confidence, and understanding of how a wedding day flows meant we never had to worry about a thing. She knew exactly where to be and when, without ever feeling intrusive.<br><br>If you're considering a wedding content creator – book Kerry. She is worth her weight in gold and we are beyond grateful for everything she captured for us."</blockquote>
-          <div class="border-t border-sage/30 pt-4">
-            <p class="font-medium tracking-wide">Erin and Dante</p>
-          </div>
+    </div>
+  </section>
+
+  <!-- Review 2, para 1: left-aligned beside whitespace -->
+  <section class="py-16 md:py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="md:col-start-2">
+          <svg class="w-8 h-8 mb-6 text-sage/60" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          <p class="font-serif text-xl md:text-2xl font-light italic leading-relaxed text-charcoal/90 mb-6">"Kerry made me, my husband, and our entire wedding party feel completely relaxed and at ease. Her knowledge, confidence, and understanding of how a wedding day flows meant we never had to worry about a thing. She knew exactly where to be and when, without ever feeling intrusive."</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Review 2, para 2: full-width dark closer -->
+  <section class="py-16 md:py-20 bg-charcoal text-cream">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <p class="font-serif text-2xl md:text-3xl font-light italic leading-relaxed mb-8">"If you're considering a wedding content creator – book Kerry. She is worth her weight in gold and we are beyond grateful for everything she captured for us."</p>
+      <p class="text-sm tracking-widest uppercase text-sage">— Erin and Dante</p>
     </div>
   </section>
 
