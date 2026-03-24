@@ -38,7 +38,7 @@
   
   <!-- Navigation -->
   <header class="fixed w-full top-0 z-50" x-data="{ scrolled: false, open: false }" @scroll.window="scrolled = (window.pageYOffset > 50)">
-    <nav class="transition-all duration-500 px-6 md:px-12 lg:px-20" :class="scrolled ? 'bg-cream/95 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'">
+    <nav class="transition-all duration-500 px-6 md:px-12 lg:px-20" :class="scrolled ? 'py-4 shadow-sm' : 'bg-transparent py-6'" :style="scrolled ? 'background: rgba(239,246,251,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);' : ''">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <a href="../index.html"><img src="../images/logo_transp.png" alt="Happily Ever Captured" class="h-28 md:h-36 w-auto"></a>
         <ul class="hidden md:flex items-center space-x-10">
@@ -49,7 +49,7 @@
         </ul>
         <button @click="open = !open" class="md:hidden p-2"><div class="w-6 h-5 relative flex flex-col justify-between"><span class="w-full h-0.5 bg-charcoal transition-all" :class="open ? 'rotate-45 translate-y-2' : ''"></span><span class="w-full h-0.5 bg-charcoal transition-all" :class="open ? 'opacity-0' : ''"></span><span class="w-full h-0.5 bg-charcoal transition-all" :class="open ? '-rotate-45 -translate-y-2' : ''"></span></div></button>
       </div>
-      <div x-show="open" x-cloak class="md:hidden absolute top-full left-0 w-full bg-cream/98 backdrop-blur-md shadow-lg">
+      <div x-show="open" x-cloak class="md:hidden absolute top-full left-0 w-full shadow-lg" style="background: rgba(239,246,251,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
         <ul class="flex flex-col items-center py-8 space-y-6">
           <li><a href="../index.html#portfolio" class="text-sm tracking-widest uppercase">Portfolio</a></li>
           <li><a href="../index.html#packages" class="text-sm tracking-widest uppercase">Packages</a></li>
