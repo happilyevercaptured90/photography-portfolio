@@ -24,7 +24,7 @@
       theme: {
         extend: {
           fontFamily: { 'serif': ['Cormorant Garamond', 'serif'], 'sans': ['Montserrat', 'sans-serif'] },
-          colors: { 'cream': '#FAF8F5', 'charcoal': '#2C2C2C', 'sage': '#9CAF88', 'taupe': '#A69F98', 'blush': '#E8D5D0', 'gold': '#8B7355' },
+          colors: { 'cream': '#EFF6FB', 'charcoal': '#2C3E50', 'sage': '#7BAFD4', 'taupe': '#8AAFC8', 'blush': '#D6EAF5', 'gold': '#4A7FA5' },
         },
       },
     }
@@ -37,7 +37,7 @@
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
     .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
-    .hero-gradient { background: linear-gradient(135deg, rgba(250,248,245,0.95) 0%, rgba(250,248,245,0.7) 50%, rgba(250,248,245,0.4) 100%); }
+    .hero-gradient { background: linear-gradient(135deg, rgba(239,246,251,0.92) 0%, rgba(239,246,251,0.65) 50%, rgba(239,246,251,0.3) 100%); }
     .img-hover { transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
     .img-hover:hover { transform: scale(1.05); }
   </style>
@@ -49,7 +49,7 @@
     <nav class="transition-all duration-500 px-6 md:px-12 lg:px-20" :class="scrolled ? 'bg-cream/95 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <a href="index.html" class="group">
-          <img src="images/logo_transp.png" alt="Happily Ever Captured" class="h-12 md:h-14 w-auto">
+          <img src="images/logo_transp.png" alt="Happily Ever Captured" class="h-20 md:h-24 w-auto">
         </a>
         <ul class="hidden md:flex items-center space-x-10">
           <li><a href="#portfolio" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">Portfolio<span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span></a></li>
@@ -79,7 +79,7 @@
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center">
     <div class="absolute inset-0 z-0">
-      <img src="images/hero.jpg" alt="Wedding couple" class="w-full h-full object-cover">
+      <img src="images/IMG-20260324-WA0007.jpg" alt="Above the clouds" class="w-full h-full object-cover object-bottom">
       <div class="absolute inset-0 hero-gradient"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-32">
@@ -106,7 +106,7 @@
   </section>
 
   <!-- As Seen In Section -->
-  <section class="py-4 md:py-6 bg-white border-b border-taupe/20">
+  <section class="py-4 md:py-6 bg-white border-b border-sage/20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <p class="text-[10px] uppercase tracking-widest text-taupe leading-none mb-1">As Seen In</p>
       <p class="text-sm leading-snug">
@@ -118,7 +118,7 @@
   </section>
 
   <!-- Intro Section -->
-  <section id="intro" class="py-24 md:py-32 bg-white">
+  <section id="intro" class="py-24 md:py-32 bg-blush">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div class="relative">
@@ -304,7 +304,7 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="py-24 md:py-32 bg-white">
+  <section class="py-24 md:py-32 bg-cream">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
