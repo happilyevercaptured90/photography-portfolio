@@ -21,15 +21,25 @@
       },
     }
   </script>
-  <style>[x-cloak] { display: none !important; } .img-hover { transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); } .img-hover:hover { transform: scale(1.03); }</style>
+  <style>[x-cloak] { display: none !important; } .img-hover { transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); } .img-hover:hover { transform: scale(1.03); }
+    #cloud-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
+    #cloud-bg img { width: 110%; height: 110%; object-fit: cover; object-position: bottom; transform: translate(-5%, -5%); will-change: transform; }
+    body { background: transparent !important; }
+    section, footer { background-color: transparent !important; }
+    .bg-white { background-color: rgba(255,255,255,0.55) !important; }
+    .bg-cream { background-color: rgba(239,246,251,0.55) !important; }
+    .bg-blush { background-color: rgba(214,234,245,0.55) !important; }
+    .bg-charcoal { background-color: rgba(44,62,80,0.88) !important; backdrop-filter: blur(4px); }
+  </style>
 </head>
 <body class="bg-cream text-charcoal font-sans antialiased">
+  <div id="cloud-bg"><img src="../images/IMG-20260324-WA0007.jpg" alt="" aria-hidden="true" id="cloud-img"></div>
   
   <!-- Navigation -->
   <header class="fixed w-full top-0 z-50" x-data="{ scrolled: false, open: false }" @scroll.window="scrolled = (window.pageYOffset > 50)">
     <nav class="transition-all duration-500 px-6 md:px-12 lg:px-20" :class="scrolled ? 'bg-cream/95 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="../index.html"><img src="../images/logo_transp.png" alt="Happily Ever Captured" class="h-20 md:h-24 w-auto"></a>
+        <a href="../index.html"><img src="../images/logo_transp.png" alt="Happily Ever Captured" class="h-28 md:h-36 w-auto"></a>
         <ul class="hidden md:flex items-center space-x-10">
           <li><a href="../index.html#portfolio" class="text-sm tracking-widest uppercase hover:text-sage transition-colors">Portfolio</a></li>
           <li><a href="../index.html#packages" class="text-sm tracking-widest uppercase hover:text-sage transition-colors">Packages</a></li>
@@ -127,6 +137,24 @@
       <div class="border-t border-cream/10 pt-8 text-center"><p class="text-cream/40 text-xs">© <span id="current-year"></span> ʜᴀᴘᴘɪʟʏ ᴇᴠᴇʀ ᴄᴀᴘᴛᴜʀᴇᴅ. All rights reserved.</p></div>
     </div>
   </footer>
-  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const cloudImg = document.getElementById('cloud-img');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          const maxScroll = document.body.scrollHeight - window.innerHeight;
+          const pct = maxScroll > 0 ? scrollY / maxScroll : 0;
+          const translateY = -5 + pct * -8;
+          const translateX = -5 + Math.sin(pct * Math.PI) * 2;
+          cloudImg.style.transform = `translate(${translateX}%, ${translateY}%)`;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  </script>
 </body>
 </html>
