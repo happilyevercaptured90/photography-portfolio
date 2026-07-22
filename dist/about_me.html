@@ -67,7 +67,7 @@
           <img src="../images/happily_ever_captured_transparent_v2.png" alt="Happily Ever Captured" class="h-28 md:h-36 w-auto">
         </a>
 
-        <ul class="hidden md:flex items-center space-x-10">
+        <ul class="hidden md:flex items-center space-x-8">
           <li>
             <a href="../index.html#portfolio" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">
               Portfolio
@@ -75,8 +75,8 @@
             </a>
           </li>
           <li>
-            <a href="../index.html#services" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">
-              Services
+            <a href="../index.html#packages" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">
+              Packages
               <span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
@@ -84,6 +84,12 @@
             <a href="about_me.html" class="text-sm tracking-widest uppercase text-sage relative">
               About
               <span class="absolute -bottom-1 left-0 w-full h-px bg-sage"></span>
+            </a>
+          </li>
+          <li>
+            <a href="reviews.html" class="text-sm tracking-widest uppercase hover:text-sage transition-colors relative group">
+              Reviews
+              <span class="absolute -bottom-1 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
           <li>
@@ -105,8 +111,9 @@
       <div x-show="open" x-cloak class="md:hidden absolute top-full left-0 w-full shadow-lg" style="background: rgba(239,246,251,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
         <ul class="flex flex-col items-center py-8 space-y-6">
           <li><a href="../index.html#portfolio" @click="open = false" class="text-sm tracking-widest uppercase">Portfolio</a></li>
-          <li><a href="../index.html#services" @click="open = false" class="text-sm tracking-widest uppercase">Services</a></li>
+          <li><a href="../index.html#packages" @click="open = false" class="text-sm tracking-widest uppercase">Packages</a></li>
           <li><a href="about_me.html" class="text-sm tracking-widest uppercase text-sage">About</a></li>
+          <li><a href="reviews.html" class="text-sm tracking-widest uppercase">Reviews</a></li>
           <li><a href="contact.html" class="text-sm tracking-widest uppercase bg-charcoal text-cream px-6 py-3">Get in Touch</a></li>
         </ul>
       </div>
@@ -205,12 +212,15 @@
             </div>
           </div>
 
-          <div class="pt-8">
+          <div class="pt-8 flex flex-wrap gap-4">
             <a href="contact.html" class="inline-flex items-center text-sm tracking-widest uppercase bg-charcoal text-cream px-8 py-4 hover:bg-sage transition-colors group">
               Let's Work Together
               <svg class="w-4 h-4 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
+            </a>
+            <a href="reviews.html" class="inline-flex items-center text-sm tracking-widest uppercase border border-charcoal px-8 py-4 hover:bg-charcoal hover:text-cream transition-all group">
+              Read Couples' Reviews
             </a>
           </div>
         </div>
@@ -235,8 +245,9 @@
           <h4 class="text-sm tracking-widest uppercase mb-4">Quick Links</h4>
           <ul class="space-y-2 text-cream/60 text-sm">
             <li><a href="../index.html#portfolio" class="hover:text-sage transition-colors">Portfolio</a></li>
-            <li><a href="../index.html#services" class="hover:text-sage transition-colors">Services</a></li>
+            <li><a href="../index.html#packages" class="hover:text-sage transition-colors">Packages</a></li>
             <li><a href="about_me.html" class="hover:text-sage transition-colors">About</a></li>
+            <li><a href="reviews.html" class="hover:text-sage transition-colors">Reviews</a></li>
             <li><a href="contact.html" class="hover:text-sage transition-colors">Contact</a></li>
           </ul>
         </div>
